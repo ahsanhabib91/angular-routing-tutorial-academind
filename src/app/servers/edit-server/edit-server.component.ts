@@ -46,7 +46,7 @@ export class EditServerComponent implements OnInit, CanComponentDeactivate {
 	}
 
 	canDeactivate(): Observable<boolean> | Promise<boolean> | boolean {
-		// console.log('canDeactivate called');
+		console.log('canDeactivate called');
 		if (!this.allowEdit) {
 			return true;
 		}
